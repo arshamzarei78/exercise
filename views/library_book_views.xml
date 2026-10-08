@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_library_book" model="ir.actions.act_window">
+            <field name="name">کتاب ها</field>
+            <field name="res_model">library.book</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="view_library_book_form" model="ir.ui.view">
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="status" widget="statusbar"/>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>کتاب</h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="author"/>
+                                <field name="publisher"/>
+                                <field name="category"/>
+                                <field name="date"/>
+                                <field name="copy_ids"/>
+                            </group>
+                            <group>
+                                <field name="language"/>
+                                <field name="price"/>
+                                <field name="active"/>
+                                <field name="description"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_library_book_list" model="ir.ui.view">
+            <field name="name">library.book.list</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="category"/>
+                    <field name="active"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>
