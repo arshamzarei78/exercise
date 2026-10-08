@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "course",
+    'name': "library",
     'version': '1.0',
     'author': "گروه خفن",
     'category': 'شخصی/اداری',
@@ -8,9 +8,13 @@
     'description': """
     ماژول رزرو خودرو
     """,
+
     'license': 'LGPL-3',
     'installable': True,
     'data': [
+        'security/ir.model.access.csv',
+
+        'views/res_partner_views.xml',
 
     ],
 }
