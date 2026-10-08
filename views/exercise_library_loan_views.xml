@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <data>
+        <record id="action_exercise_library_loan" model="ir.actions.act_window">
+            <field name="name">امانات</field>
+            <field name="res_model">library.loan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+         <record id="view_exercise_library_loan" model="ir.ui.view">
+            <field name="name">library.loan.form</field>
+            <field name="model">library.loan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field placeholder="گیرنده" name="buyer_id"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="loan_date"/>
+                                <field name="loan_expire"/>
+                            </group>
+                            <group>
+                                <field name="status"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+          <record id="view_exercise_library_loan_tree" model="ir.ui.view">
+            <field name="name">library.loan.tree</field>
+            <field name="model">library.loan</field>
+            <field name="arch" type="xml">
+                <tree default_order="id desc">
+                    <field name="loan_date" />
+                    <field name="loan_expire"/>
+                    <field name="status" />
+                    <field name="buyer_id" />
+                </tree>
+            </field>
+        </record>
+
+    </data>
+
+</odoo>
