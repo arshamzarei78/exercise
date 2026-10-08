@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem
+                id="library_menu_root"
+                name="کتاب خونه"
+        />
+
+        <menuitem
+                id="action_library_books"
+                name="کتاب ها"
+                parent="library_menu_root"
+                action="action_library_book"
+                sequence="2"/>
+
+        <menuitem
+                id="action_library_books_copy"
+                name="نسخه ها"
+                parent="library_menu_root"
+                action="action_library_book_copy"
+                sequence="3"/>
+
+    </data>
+</odoo>
