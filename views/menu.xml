@@ -8,6 +8,13 @@
         />
 
         <menuitem
+                id="exercise_menu_library_loan"
+                action="action_exercise_library_loan"
+                name="امانات"
+                parent="library_menu_root"
+                sequence="1"/>
+
+        <menuitem
                 id="action_library_books"
                 name="کتاب ها"
                 parent="library_menu_root"

@@ -9,7 +9,7 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-         <record id="view_exercise_library_loan" model="ir.ui.view">
+         <record id="view_exercise_library_loan_form" model="ir.ui.view">
             <field name="name">library.loan.form</field>
             <field name="model">library.loan</field>
             <field name="arch" type="xml">
@@ -24,9 +24,11 @@
                             <group>
                                 <field name="loan_date"/>
                                 <field name="loan_expire"/>
+                                <field name="book_id"/>
                             </group>
                             <group>
                                 <field name="status"/>
+                                <field name="copy_ids" domain="[('book_id', '=', book_id)]"/>
                             </group>
                         </group>
                     </sheet>

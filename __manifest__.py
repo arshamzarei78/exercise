@@ -14,18 +14,13 @@
     'data': [
         'security/ir.model.access.csv',
 
-
         'views/res_partner_views.xml',
 
-
         'views/exercise_library_loan_views.xml',
-        'views/exercise_menus.xml',
 
-    'security/ir.model.access.csv',
-
-    'views/library_book_views.xml',
-    'views/library_book_copy_views.xml',
-    'views/menu.xml',
+        'views/library_book_views.xml',
+        'views/library_book_copy_views.xml',
+        'views/menu.xml',
 
     ],
 }
